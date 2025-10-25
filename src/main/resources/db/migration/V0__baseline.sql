@@ -1,0 +1,2 @@
+-- Baseline for Flyway
+COMMIT;
