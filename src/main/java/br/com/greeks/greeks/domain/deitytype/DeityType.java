@@ -1,11 +1,14 @@
 package br.com.greeks.greeks.domain.deitytype;
 
+import br.com.greeks.greeks.domain.deity.Deity;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+
+import java.util.List;
 
 
 @Entity
@@ -42,6 +45,6 @@ public class DeityType {
     @Column(name = "power_source", length = 150)
     private String powerSource;
 
-    @OneToMany(mappedBy = "deityType", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    @OneToMany(mappedBy = "deityType", cascade = CascadeType.REMOVE, orphanRemoval = true, fetch = FetchType.LAZY)
     private List<Deity> deities;
 }
