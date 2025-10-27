@@ -9,10 +9,10 @@
 		<relativePath/>
 	</parent>
 	<groupId>br.com.fiap</groupId>
-	<artifactId>otmav</artifactId>
-	<version>0.8</version>
-	<name>otmav</name>
-	<description>Project for FIAP Sprint 3</description>
+	<artifactId>greeks</artifactId>
+	<version>1.0</version>
+	<name>greeks</name>
+	<description>Project for DevOps CP6 - FIAP</description>
 	<url/>
 	<licenses>
 		<license/>
